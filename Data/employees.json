@@ -1,0 +1,62 @@
+[
+  {
+    "IdentityCard": "201-260582-0005U",
+    "Name": "Lawdee Norman",
+    "Surname": "Narv\u00E1ez Bello",
+    "BirthDate": "0001-01-01",
+    "MaritalStatus": "Casado",
+    "NumberChildren": 0,
+    "Phone": "86823-1468",
+    "Email": "86823-1468",
+    "Address": "Urbanizaci\u00F3n Valle Santa Rosa, Ciudad Sandino",
+    "IsActive": true
+  },
+  {
+    "IdentityCard": "   -      -",
+    "Name": "",
+    "Surname": "",
+    "BirthDate": "2026-04-17",
+    "MaritalStatus": "",
+    "NumberChildren": 0,
+    "Phone": "",
+    "Email": "",
+    "Address": "",
+    "IsActive": true
+  },
+  {
+    "IdentityCard": "101-310582-0002L",
+    "Name": "MEYLING YAOSKA",
+    "Surname": "LARA SANCHEZ",
+    "BirthDate": "1982-05-31",
+    "MaritalStatus": "Casado",
+    "NumberChildren": 0,
+    "Phone": "8863-8607",
+    "Email": "mlaras@gmail.com",
+    "Address": "URBANIZACI\u00D3N VALLE SANTA ROSA, CIUDAD SANDINO MANAGUA",
+    "IsActive": true
+  },
+  {
+    "IdentityCard": "101-220689-4526P",
+    "Name": "ROCARDO JOSE",
+    "Surname": "MORALES CANO",
+    "BirthDate": "2026-04-17",
+    "MaritalStatus": "Soltero",
+    "NumberChildren": 3,
+    "Phone": "7896-6541",
+    "Email": "richardjose@gmail.com",
+    "Address": "BARRIO ALTAGRACIA, PANADERIA EL PASTEL, 2 C. AL LAGO.",
+    "IsActive": true
+  },
+  {
+    "IdentityCard": "401-251007-1011E",
+    "Name": "Nick",
+    "Surname": "Torrez Arias",
+    "BirthDate": "2007-10-25",
+    "MaritalStatus": "Soltero",
+    "NumberChildren": 0,
+    "Phone": "75429760",
+    "Email": "nickelias075@gmail.com",
+    "Address": "Villa Bosco Monge",
+    "IsActive": true
+  }
+]

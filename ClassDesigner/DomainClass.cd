@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Administration_RRHH.Domain.Department">
+    <Position X="3.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAEAACgAgAAAAAAAQAAAAAAAAAAARAAAABAAAA=</HashCode>
+      <FileName>Domain\Department.cs</FileName>
+      <NewMemberFileName>Domain\JobTitle.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.Recruitment">
+    <Position X="6.25" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAABEAAAAE=</HashCode>
+      <FileName>Domain\Recruitment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.JobTitle">
+    <Position X="8.5" Y="1" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgACABAAQAAAAAAAAA=</HashCode>
+      <FileName>Domain\JobTitle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.Employee">
+    <Position X="0.75" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIEAADDAIAAAgEIBAAAQgBAAAAEAKAAAAIEAEEBE=</HashCode>
+      <FileName>Domain\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

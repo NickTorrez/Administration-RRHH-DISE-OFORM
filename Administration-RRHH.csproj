@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Administration_RRHH</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Data\" />
+    <Folder Include="Services\" />
+    <Folder Include="UI\Dashboard\" />
+    <Folder Include="UI\Reports\" />
+    <Folder Include="UI\Process\" />
+  </ItemGroup>
+
+</Project>
