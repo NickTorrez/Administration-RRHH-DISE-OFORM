@@ -1,3 +1,5 @@
+using Administration_RRHH.UI.Catalogs;
+
 namespace Administration_RRHH
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Administration_RRHH
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmEmployee());
+            Application.Run(new FrmContainerApps());
         }
     }
 }
