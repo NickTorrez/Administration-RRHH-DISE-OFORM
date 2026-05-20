@@ -119,6 +119,7 @@ namespace Administration_RRHH.UI.Catalogs
             pnlContainer.Controls.Clear();
 
             pnlContainer.Controls.Add(hostPanel);
+
             ChildForm.Show();
 
 
