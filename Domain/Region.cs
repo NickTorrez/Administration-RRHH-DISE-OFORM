@@ -15,7 +15,7 @@ namespace Administration_RRHH.Models
         public int RegionId { get; set; }
         public string RegionCode { get; set; }
         public string Description { get; set; }
-        public string Enabled { get; set; } //Indica si la region esta activa o no 
+        public bool Enabled { get; set; } //Indica si la region esta activa o no 
 
         /* ---------------------------------------------------------------- */
         /*     Declaracion de Constructores de la clase Region              */
@@ -27,10 +27,10 @@ namespace Administration_RRHH.Models
             this.RegionId = 0;
             this.RegionCode = string.Empty;
             this.Description = string.Empty;
-            this.Enabled = "Y"; //Por defecto, la región está habilitada
+            this.Enabled = true; //Por defecto, la región está habilitada
         }
 
-        public Region (int regionId, string regionCode, string description, string enabled)
+        public Region (int regionId, string regionCode, string description, bool enabled)
         {
             this.RegionId = regionId;
             this.RegionCode = regionCode;

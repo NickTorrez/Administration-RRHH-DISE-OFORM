@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Administration_RRHH.Models
 {
-    public abstract class Individual
+    public abstract class Individual //Puede ser empleado, cliente, proveedor, etc.
     {
         /* ---------------------------------------------------------------------------------*/
         /*                                                                                  */
@@ -52,7 +52,7 @@ namespace Administration_RRHH.Models
 
         public int CalculateAge()
         {
-            DateTime today = DateOnly.FromDateTime(DateTime.Today;
+            DateOnly today = DateOnly.FromDateTime(DateTime.Today);
             int age = today.Year - BirthDate.Year;
             if (BirthDate > today.AddYears(-age))
             {

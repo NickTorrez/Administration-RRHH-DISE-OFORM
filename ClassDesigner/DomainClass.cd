@@ -1,32 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Administration_RRHH.Domain.Department">
-    <Position X="3.75" Y="1" Width="2" />
+  <Class Name="Administration_RRHH.Domain.AccruedItem">
+    <Position X="2.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAEAACgAgAAAAAAAQAAAAAAAAAAARAAAABAAAA=</HashCode>
+      <HashCode>AAIgAAAAMAAAAIAAAAAAAACAAQAAAAAAAAAAAAACFAA=</HashCode>
+      <FileName>Domain\AccruedItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.Department">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAAAEAAAgAgAAEAAAAAAAAAQAAAAAARAAAABAAAA=</HashCode>
       <FileName>Domain\Department.cs</FileName>
       <NewMemberFileName>Domain\JobTitle.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Administration_RRHH.Domain.Recruitment">
-    <Position X="6.25" Y="1" Width="1.75" />
+  <Class Name="Administration_RRHH.Domain.Employee">
+    <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAABEAAAAE=</HashCode>
-      <FileName>Domain\Recruitment.cs</FileName>
+      <HashCode>AAAAAEAADCAIAAAAEABAAAQgBAAAAEAKAAAAIAAAEAA=</HashCode>
+      <FileName>Domain\Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Administration_RRHH.Domain.JobTitle">
-    <Position X="8.5" Y="1" Width="1.75" />
+    <Position X="8.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgACABAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAAgAAAAAAAACAAAAAAAIgAAABCASAAAAAgCAA=</HashCode>
       <FileName>Domain\JobTitle.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Administration_RRHH.Domain.Employee">
-    <Position X="0.75" Y="1" Width="2.5" />
+  <Class Name="Administration_RRHH.Domain.Recruitment">
+    <Position X="8.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIEAADDAIAAAgEIBAAAQgBAAAAEAKAAAAIEAEEBE=</HashCode>
-      <FileName>Domain\Employee.cs</FileName>
+      <HashCode>AAAIAAAEAEAAAAAASAAAAAAiAAABAAAEAAAAREAAAAA=</HashCode>
+      <FileName>Domain\Recruitment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.PayrollMovement">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAIQAgAIAEAgAAAAAAAAAAAAAEAgCEAQAAAQE=</HashCode>
+      <FileName>Domain\PayrollMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.FamilyReference">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAAAAAAICAAAAAQCQgBBABAAACEAABAAAAQAg=</HashCode>
+      <FileName>Domain\FamilyReference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Domain.DeductionItem">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEBAAAAAIAAACIBAAAAAAACAAAAAAAAAAEAAABAAAAA=</HashCode>
+      <FileName>Domain\DeductionItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Models.Individual">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgCAAAAAAAAAAAAQABAAAgAACAAAAIAAAAAA=</HashCode>
+      <FileName>Domain\Individual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Models.Municipality">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAAAIAAIAAAAQAAAhAAAAAACAAAAAAAAAEAAg=</HashCode>
+      <FileName>Domain\Municipality.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Administration_RRHH.Models.Region">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAQAAAAMgAIAAAAEAAAAAAAAAAQAAAABAAAAAAAA=</HashCode>
+      <FileName>Domain\Region.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
