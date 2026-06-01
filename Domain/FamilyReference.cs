@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Administration_RRHH.Domain
 {
     public class FamilyReference:Individual
