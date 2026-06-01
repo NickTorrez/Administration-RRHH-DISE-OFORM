@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administration_RRHH.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Administration_RRHH.Domain
 {
-    public class FamilyReference
+    public class FamilyReference:Individual
     {
         /* ---------------------------------------------------------------- */
         /* Declaracion de Propiedades de la Clase FamilyReference       */
@@ -30,7 +31,7 @@ namespace Administration_RRHH.Domain
 
         public FamilyReference()
         {
-            this.FamilyReferenceId = 0;
+            FamilyReferenceId = 0;
             this.EmployeeFileId = 0;
             this.IdentityCard = string.Empty;
             this.Names = string.Empty;

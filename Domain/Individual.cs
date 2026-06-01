@@ -9,7 +9,7 @@ namespace Administration_RRHH.Models
     public abstract class Individual //Puede ser empleado, cliente, proveedor, etc.
     {
         /* ---------------------------------------------------------------------------------*/
-        /*                                                                                  */
+        /*                                 PROPIEDADES                                        */
         /* ---------------------------------------------------------------------------------*/
 
         public int Id { get; set; }
@@ -21,7 +21,7 @@ namespace Administration_RRHH.Models
         public string Address { get; set; }
 
         /*---------------------------------------------------------------------------------*/
-        /*                                                                                  */
+        /*                                 CONSTRUCTORES                                     */
         /*---------------------------------------------------------------------------------*/
 
         public Individual()
@@ -47,8 +47,13 @@ namespace Administration_RRHH.Models
         }
 
         /*---------------------------------------------------------------------------------*/
-        /*                                                                                  */
+        /*         METODOS                                                                    */
         /* ---------------------------------------------------------------------------------*/
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
 
         public int CalculateAge()
         {
@@ -62,6 +67,7 @@ namespace Administration_RRHH.Models
             return age;
         }
 
+        // Metodo abstracto para validar la fecha de nacimiento, que debe ser implementado por las clases derivadas 
         public abstract bool ValidateBirthDate();
     }
 }

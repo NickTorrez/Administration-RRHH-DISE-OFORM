@@ -2,79 +2,98 @@
 using System.IO;
 using System.Text.Json;
 using System.Collections.Generic;
-using System.Linq; 
+using System.Linq;
+using Administration_RRHH.Models;
 
 namespace Administration_RRHH.Domain
 {
-    public class Employee
+    public class Employee:Individual
     {
+
         /* --------------------------------------------------------------------- */
         /* Propiedades Auto-implementadas                   */
         /* --------------------------------------------------------------------- */
-        public string IdentityCard { get; set; } = string.Empty;
-        public string Name { get; set; } = string.Empty;
-        public string Surname { get; set; } = string.Empty;
-        public string MaritalStatus { get; set; } = string.Empty;
-        public string Phone { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public string Address { get; set; } = string.Empty;
-        public bool IsActive { get; set; } = true;
+        public string IdentityCard { get; set; }
+        public string Name { get; set; } 
+        public string Surname { get; set; }
+        public string MaritalStatus { get; set; }
+        public string Inss { get; set; }
+        public string Phone { get; set; }
+        public string Email { get; set; }
+        public string Address { get; set; } 
+        public int NumberChildren { get; set; } 
+        public bool IsActive { get; set; }
 
-        /* --------------------------------------------------------------------- */
-        /* Propiedades con Validación                       */
-        /* --------------------------------------------------------------------- */
-        private DateOnly _birthDate;
-        public DateOnly BirthDate
-        {
-            get => _birthDate;
-            set
-            {
-                var today = DateOnly.FromDateTime(DateTime.Today);
-                if (value > today)
-                    throw new ArgumentException("Error en dato fecha de nacimiento.");
-                _birthDate = value;
-            }
-        }
-
-        private int _numberChildren;
-        public int NumberChildren
-        {
-            get => _numberChildren;
-            set
-            {
-                if (value < 0)
-                    throw new ArgumentException("Error en dato número de hijos.");
-                _numberChildren = value;
-            }
-        }
-
+        
         /* --------------------------------------------------------------------- */
         /* Constructores                            */
         /* --------------------------------------------------------------------- */
         public Employee() { }
 
-        public Employee(string identityCard, string name, string surname, string address,
-                        DateOnly birthDate, string maritalStatus, int numberChildren,
-                        string email, string phone)
+        public Employee( string inns, bool isActive, int numberChildren, string email, string address, string phone, string surname, string name, DateOnly birthDate, string maritalStatus) : base(IdentityCard,)
         {
-            IdentityCard = identityCard;
-            Name = name;
-            Surname = surname;
-            Address = address;
-            BirthDate = birthDate;
-            MaritalStatus = maritalStatus;
+            Inss = inns;
+            IsActive = isActive;
             NumberChildren = numberChildren;
             Email = email;
-            Phone = phone;
         }
 
         /* --------------------------------------------------------------------- */
         /* Métodos CRUD (Idealmente deben moverse a EmployeeRepository)        */
         /* --------------------------------------------------------------------- */
-        public bool AddEmployee() => throw new NotImplementedException("Implementar conexión a SQL Server aquí o en la capa de Datos.");
-        public Employee? ReadEmployee(string cedula) => throw new NotImplementedException();
-        public static List<Employee> ListEmployee() => throw new NotImplementedException();
-        public bool UpdateEmployee(string filtro) => throw new NotImplementedException();
-        public bool TerminateEmployee(string filtro) => throw new NotImplementedException();
+
+        public override bool ValidateBirthDate()
+        {
+            // Validar que la fecha de nacimiento no sea en el futuro
+                if (BirthDate > DateOnly.FromDateTime(DateTime.Today))
+                {
+                    return false; // La fecha de nacimiento no puede ser en el futuro
+                }
+                return true; // La fecha de nacimiento es válida
+        }
+
+        public int AddEmployee()
+        {
+            return 0;
+        }
+
+        /// <summary>
+        /// Lee el registro de un empleado a través de su número de identificación y devuelve un objeto Employee con los datos correspondientes.
+        /// </summary>
+        /// <param name="idNumber"></param>
+        /// <returns></returns> Empleado con los datos correspondientes al número de identificación proporcionado.
+        public Employee GetEmployeeById(int idNumber)
+        {
+            return new Employee();
+        }
+
+        /// <summary>
+        /// Lista un set de Empleados, segmentados por bloques de paginacion 10 en 10
+        /// </summary>
+        /// <returns></returns> Listaod de empleados ordenados de forma desecndente por fecha de ingreso </returns>
+
+        public List<Employee> ListEmployees()
+        {
+            return new List<Employee>(); // Pendiente de Implementacion con la base de datos
+        }
+
+        /// <summary>
+        /// Modifica el registro de un empleado especificado por su numero de cedula.
+        /// El metodo recibe el numero de cedula del empleado a modificar y los nuevos datos del empleado.
+        /// </summary>
+        /// <param name="idNumber"></param>
+        public void ModifyEmployee (string idNumber)
+        {
+            // Pendiente de Implementacion con la base de datos
+        }
+
+        /// <summary>
+        /// Desabilita 
+        /// </summary>
+        /// <param name="idNumber"></param>
+         public void DisableEmployee(string idNumber)
+        {
+            // Pendiente de Implementacion con la base de datos
+        }
     }//end-class
 }//end-namespace.
